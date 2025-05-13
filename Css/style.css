@@ -1,0 +1,478 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Cabeçalho */
+
+.container-header-cabecalho {
+  background-color: #1a2b4b;
+  border-bottom: 1.5rem solid #b68954;
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.container-div-cabecalho {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-ul-cabecalho {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.container-div-cabecalho img {
+  width: 30%;
+}
+
+.container-div-banner-principal img {
+  z-index: 1;
+}
+
+.container-ul-cabecalho li {
+  list-style: none;
+}
+
+.container-ul-cabecalho li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: 0.4s ease;
+}
+
+/* -----BEFORE - MENU------- */
+.container-ul-cabecalho li a:hover {
+  color: #b68954;
+  border-top: 0.38rem solid #b68954;
+  border-bottom: 0.38rem solid #b68954;
+  padding: 0.75rem 0;
+}
+
+/* --------------- Banner Principal------------------------- */
+
+#menu1 {
+  color: #fff;
+  font-size: 2.5rem;
+  display: none;
+}
+
+.container-section-banner-principal {
+  background-image: url("../assets/banner1.png");
+  background-size: cover;
+  border-bottom: 1.5rem solid #b68954;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  position: relative;
+  scroll-margin-top: 12rem;
+}
+
+.container-div-banner-principal::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #1a2b4b;
+  position: absolute;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.container-div-banner-principal {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  justify-content: space-around; /* MODIFICADO*/
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#estatua-justica {
+  width: 26.25rem;
+}
+
+.container-div-textos-banner-principal {
+  width: 50%;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.container-div-textos-banner-principal h1 {
+  color: #fff;
+  font-size: 3.5rem; /* MODIFICADO*/
+  border-left: 0.38rem solid #b68954;
+  padding-left: 0.75rem;
+}
+
+.container-div-textos-banner-principal p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.botao-wpp {
+  background-color: #b68954;
+  width: fit-content;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  transition: 0.4s ease;
+}
+
+.botao-wpp:hover {
+  background-color: #bb976e;
+}
+
+/* ------- ESPECIALIDADES------------- */
+
+.container-section-especialidades {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  background-color: #efefef;
+  scroll-margin-top: 12rem;
+}
+
+.container-div-especialidades {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-div-especialidades h2 {
+  color: #1a2b4b;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container-div-cards-especialidades {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.cards-especialidades img {
+  width: 4.37rem;
+}
+
+.cards-especialidades {
+  width: 24rem;
+  height: 17.5rem;
+  border: 0.2rem solid #b68954;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 1rem;
+  color: #1a2b4b;
+}
+
+.cards-especialidades h3 {
+  font-size: 1.3rem;
+}
+
+.cards-especialidades p {
+  font-size: 1.2rem;
+}
+
+/* ----QUEM SOMOS -------------------- */
+
+.container-section-quem-somos {
+  background-image: url("../assets/banner-sobre-mim.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  position: relative;
+  scroll-margin-top: 12rem;
+}
+
+.container-section-quem-somos::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #1a2b4b;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+}
+
+.container-div-quem-somos {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  z-index: 1;
+}
+
+.container-div-quem-somos img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.2rem solid #b68954;
+}
+
+.container-div-quem-somos h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  border-bottom: 0.5rem solid #b68954;
+  padding-bottom: 1rem;
+}
+
+.container-div-paragrafos-quem-somos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: justify;
+  font-weight: 300;
+}
+
+#ultimo-paragrafo-quem-somos {
+  font-weight: bold;
+}
+
+/* ------- NÚMEROS------- */
+
+.container-section-numeros {
+  background-color: #b68954;
+  display: flex;
+  justify-content: center;
+}
+
+.container-div-numeros {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card-numeros {
+  width: 15.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.card-numeros h2 {
+  font-size: 5.5rem;
+}
+
+.card-numeros p {
+  font-size: 1.2rem;
+}
+
+/* ---DEPOIMENTOS---------------- */
+
+.container-section-depoimentos {
+  display: flex;
+  justify-content: center;
+  padding: 4em 0;
+  scroll-margin-top: 12rem;
+}
+
+.container-div-depoimentos {
+  width: 85%;
+}
+
+.container-div-depoimentos h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 6rem;
+  color: #1a2b4b;
+}
+
+.container-div-cards-depoimentos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.cards-depoimentos {
+  width: 20.62rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  border: 0.15rem solid #b68954;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  position: relative;
+  height: 26rem;
+}
+
+.cards-depoimentos h3 {
+  font-size: 1.3rem;
+}
+
+.cards-depoimentos p {
+  font-size: 1rem;
+}
+
+.aspas {
+  position: absolute;
+  bottom: 24.5rem;
+}
+
+/* ----------COMPROMISSO----------- */
+
+.container-section-compromisso {
+  background-image: url(../assets/banner-aperto-maos.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.container-div-compromisso {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2.5rem;
+  width: 70%;
+  padding: 5rem 0;
+  z-index: 1;
+  color: #fff;
+}
+
+.container-section-compromisso::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #1a2b4b;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.container-div-compromisso h2 {
+  font-size: 2.8rem;
+  border-bottom: 0.5rem solid #b68954;
+  padding-bottom: 0.5rem;
+}
+
+.container-div-compromisso p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+footer {
+  background-color: #b68954;
+  padding: 2.5rem 0;
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+/* REPONSIVIDADE */
+
+@media (max-width: 1043px) {
+  #estatua-justica {
+    display: none;
+  }
+
+  .container-div-textos-banner-principal {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 8rem 0;
+    gap: 2rem;
+  }
+
+  .container-div-textos-banner-principal h1 {
+    border-left: none;
+  }
+}
+
+@media (max-width: 951px) {
+  .container-div-cards-especialidades {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1353px) {
+  .container-div-cards-depoimentos {
+    justify-content: center;
+    gap: 5rem 2rem;
+  }
+}
+
+@media (max-width: 1240px) {
+  .container-div-cards-depoimentos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1248px) {
+  .container-ul-cabecalho {
+    display: none;
+  }
+
+  #menu1{
+    display: block;
+  }
+}
+
+@media (max-width: 646px) {
+  .container-div-numeros {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 879px) {
+  .container-div-cabecalho img {
+    width: 15rem;
+  }
+}
