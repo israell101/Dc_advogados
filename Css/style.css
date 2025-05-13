@@ -28,7 +28,7 @@ html {
 }
 
 .container-div-cabecalho {
-  width: 85%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -42,7 +42,7 @@ html {
 }
 
 .container-div-cabecalho img {
-  width: 30%;
+  width: 23%;
 }
 
 .container-div-banner-principal img {
